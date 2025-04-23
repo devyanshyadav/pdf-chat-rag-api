@@ -16,7 +16,7 @@ const textSplitter = new RecursiveCharacterTextSplitter({
 
 const embedder = new GoogleGenerativeAIEmbeddings({
     model: "text-embedding-004",
-    apiKey: "AIzaSyCxf-7bzmnyLgJIqwWQL6lqlCyLa-tBMhY",
+    apiKey: process.env.GEMINI_API_KEY,
 });
 
 
