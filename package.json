@@ -1,0 +1,44 @@
+{
+  "name": "pdf-chat-rag-api",
+  "description": "A Node.js API that enables intelligent conversations with PDF documents using Retrieval-Augmented Generation (RAG) powered by Google's Gemini AI and LangChain. Built with LangChain's powerful RAG framework for efficient document processing and contextual retrieval.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn src/index.ts"
+  },
+  "keywords": [
+    "pdf",
+    "chat",
+    "rag",
+    "retrieval-augmented-generation",
+    "qdrant",
+    "langchain",
+    "google-generative-ai",
+    "gemini-ai"
+  ],
+  "author": "Devyansh Developer",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@google/genai": "^0.9.0",
+    "@google/generative-ai": "^0.24.0",
+    "@langchain/community": "^0.3.41",
+    "@langchain/core": "^0.3.46",
+    "@langchain/google-genai": "^0.2.4",
+    "@langchain/qdrant": "^0.1.2",
+    "@qdrant/js-client-rest": "^1.14.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.2",
+    "pdf-parse": "^1.1.1"
+  }
+}
